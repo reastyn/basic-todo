@@ -46,9 +46,10 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "flow && node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "flow": "flow"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -93,7 +94,7 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "flow-bin": "^0.74.0"
+    "flow-bin": "^0.74.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.3"
   }
