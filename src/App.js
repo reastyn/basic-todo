@@ -1,6 +1,7 @@
 // @flow
 import React from "react";
 import TodoInput from "./containers/TodoInput";
+import TodoList from "./containers/TodoList";
 import "./App.scss";
 
 const App = () => (
@@ -11,16 +12,7 @@ const App = () => (
         <hr />
         <TodoInput />
       </div>
-      <div className="card">
-        <div className="card-content">
-          <div className="content">
-            <label className="checkbox is-size-5">
-              <input type="checkbox" />
-              Remember me
-            </label>
-          </div>
-        </div>
-      </div>
+      <TodoList />
     </div>
   </div>
 );

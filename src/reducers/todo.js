@@ -7,6 +7,7 @@ export default (state: Array<Todo> = [], action: Action): Array<Todo> => {
       return [
         ...state,
         {
+          id: action.id,
           text: action.text,
           completed: false
         }
