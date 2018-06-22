@@ -11,8 +11,8 @@ export default (props: Props) => (
   <div className="card">
     <div className="card-content" onClick={props.onClick}>
       <div className="content">
+        <input type="checkbox" checked={props.completed} readOnly />
         <label className="checkbox is-size-5">
-          <input type="checkbox" checked={props.completed} />
           {props.text}
         </label>
       </div>
