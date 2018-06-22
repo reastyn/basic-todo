@@ -10,3 +10,10 @@ export const addTodo = (text: string): TodoAction => {
     text
   };
 };
+
+export const toggleCompleteTodo = (id: number): TodoAction => {
+  return {
+    type: "TOGGLE_TODO",
+    id
+  };
+};
