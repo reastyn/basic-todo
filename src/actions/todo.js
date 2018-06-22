@@ -1,11 +1,10 @@
 // @flow
 import type { TodoAction } from "../constants/types";
-
-let newId = 0;
+import { incrementLastId } from "../helpers/localStorage";
 
 export const addTodo = (text: string): TodoAction => {
   return {
-    id: newId++,
+    id: incrementLastId(),
     type: "ADD_TODO",
     text
   };
